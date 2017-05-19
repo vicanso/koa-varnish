@@ -1,0 +1,41 @@
+{
+  "name": "koa-varnish",
+  "version": "1.0.0",
+  "description": "The cache middleware for koa, such as varnish",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/eslint ./*.js ./lib/*.js && node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha ./test/*.js --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vicanso@github.com/vicanso/koa-varnish.git"
+  },
+  "keywords": [
+    "cache",
+    "koa",
+    "varnish"
+  ],
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "author": "Tree Xie <vicansocanbico@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vicanso/koa-varnish/issues"
+  },
+  "homepage": "https://github.com/vicanso/koa-varnish#readme",
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "istanbul": "^0.4.5",
+    "koa": "^2.2.0",
+    "mocha": "^3.4.1",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "lru-cache": "^4.0.2"
+  }
+}
