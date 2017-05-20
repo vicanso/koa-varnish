@@ -1,5 +1,10 @@
 # koa-varnish
 
+[![Build Status](https://travis-ci.org/vicanso/koa-varnish.svg?style=flat-square)](https://travis-ci.org/vicanso/koa-varnish)
+[![Coverage Status](https://img.shields.io/coveralls/vicanso/koa-varnish/master.svg?style=flat)](https://coveralls.io/r/vicanso/koa-varnish?branch=master)
+[![npm](http://img.shields.io/npm/v/koa-varnish.svg?style=flat-square)](https://www.npmjs.org/package/koa-varnish)
+[![Github Releases](https://img.shields.io/npm/dm/koa-varnish.svg?style=flat-square)](https://github.com/vicanso/koa-varnish)
+
 The cache middleware for koa, it can cache the data such as varnish. The cache ttl is use the value of `s-maxage` or `maxage` from response header: `Cache-Control`.
 
 Uncacheable list:
