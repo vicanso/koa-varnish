@@ -34,18 +34,23 @@ app.use(cache({
       return false;
     }
     return true;
-  }
-}))
+  },
+}));
+
 app.use(ctx => {
 	if (ctx.url === '/wait') {
-		return new Promise(function(resolve, reject) {
+    return new Promise(function(resolve, reject) {
       ctx.set('Cache-Control', 'private, max-age=10');
-			ctx.body = 'Wait for 1000ms';
-			setTimeout(resolve, 1000);
-		});
+      ctx.body = 'Wait for 1000ms';
+      setTimeout(resolve, 1000);
+    });
 	} else {
     ctx.set('Cache-Control', 'public, max-age=10')
-		ctx.body = 'Hello World';
+    ctx.body = 'Hello World';
 	}
 });
 ```
+
+## License
+
+MIT
