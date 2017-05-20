@@ -12,7 +12,7 @@ Uncacheable list:
 - Method isn't 'GET' or 'HEAD'
 - Function isCacheable return false
 - HTTP response status is not 200, 203, 204, 300, 301, 302, 304, 307, 404, 410, 414
-- Get max-age form response header `Cache-Control` isn't gt 0
+- Get max-age from response header `Cache-Control` isn't gt 0
 
 ## Installation
 
